@@ -1,1 +1,1 @@
-export { default as configureStore } from './configureStore.js';
+export { default as configureStore } from './configureStore';

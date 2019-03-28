@@ -9,6 +9,14 @@ export const HutkaMapContainer = styled.View`
 export const mapStyle = StyleSheet.create({
   map: {
     ...StyleSheet.absoluteFillObject,
+    marginBottom: 1,
+  },
+});
+
+export const newMapStyle = StyleSheet.create({
+  map: {
+    ...StyleSheet.absoluteFillObject,
+    marginBottom: 0,
   },
 });
 
@@ -17,3 +25,5 @@ export const SignInButtonWrapper = styled.View`
   bottom: 24;
   align-items: center;
 `;
+
+export const SpotImage = styled.Image``;
