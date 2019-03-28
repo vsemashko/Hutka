@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "44550216014",
+    "firebase_url": "https://hutkabike.firebaseio.com",
+    "project_id": "hutkabike",
+    "storage_bucket": "hutkabike.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44550216014:android:e276583cbbbd4253",
+        "android_client_info": {
+          "package_name": "com.hutka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44550216014-53oqr6h9eapnrb8j89m4ebptl0mvf3sp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hutka",
+            "certificate_hash": "74356fb152144097eae3dfe9febd3689825b0f33"
+          }
+        },
+        {
+          "client_id": "44550216014-gqqckufel4lkm86f8snhfksadmmirfe1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hutka",
+            "certificate_hash": "e24875e114577163fb9414211f9b0d97ce5f13b1"
+          }
+        },
+        {
+          "client_id": "44550216014-orhv06n1eb8opq7k30usir0kt1c5efdc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtvAm6wdEF7B8R_VEjI5FirVXk32Hl05U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "44550216014-orhv06n1eb8opq7k30usir0kt1c5efdc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "44550216014-u4a0ol7orab3scd5or8ps0ihhuji02j9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hutka.phone-stage"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
