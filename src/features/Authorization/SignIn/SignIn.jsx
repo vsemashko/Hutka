@@ -1,5 +1,5 @@
 import React from 'react';
-import { Formik } from 'formik';
+import { Formik, ErrorMessage } from 'formik';
 
 import { TextInputField, CustomButton } from 'src/components';
 
@@ -38,9 +38,7 @@ const SignIn = ({ signIn }) => (
       }) => (
         <TextInputWrapper>
           <TextInputTitle>Введите Ваш номер телефона</TextInputTitle>
-          {errors.phoneNumber && touched.phoneNumber ? (
-            <TextError>{errors.phoneNumber}</TextError>
-          ) : null}
+          <ErrorMessage name="phoneNumber" component={TextError} />
           <TextInputFieldWrapper>
             <TextInputField
               errorState={!!(errors.phoneNumber && touched.phoneNumber)}

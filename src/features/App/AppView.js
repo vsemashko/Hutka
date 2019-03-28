@@ -9,7 +9,7 @@ const withLifecycle = lifecycle({
   componentDidMount() {
     SplashScreen.hide();
 
-    firebase.auth().onAuthStateChanged(async (user) => {
+    firebase.auth().onAuthStateChanged((user) => {
       if (user) {
         // user alreade logged in
       } else {

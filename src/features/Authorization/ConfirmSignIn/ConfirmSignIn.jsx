@@ -1,5 +1,5 @@
 import React from 'react';
-import { Formik } from 'formik';
+import { Formik, ErrorMessage } from 'formik';
 
 import { TextInputField, CustomButton } from 'src/components';
 
@@ -37,9 +37,7 @@ const ConfirmSignIn = ({ confirmCode, sendVerificationCodeAgain }) => (
       }) => (
         <TextInputWrapper>
           <TextInputTitle>Введите код из СМС</TextInputTitle>
-          {errors.code && touched.code ? (
-            <TextError>{errors.code}</TextError>
-          ) : null}
+          <ErrorMessage name="code" component={TextError} />
           <TextInputFieldWrapper>
             <TextInputField
               errorState={!!(errors.code && touched.code)}

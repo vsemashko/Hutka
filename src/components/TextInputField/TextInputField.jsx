@@ -24,9 +24,7 @@ const TextInputField = ({
     {
       customType === PHONE_NUMBER_INPUT ? (
         <PhoneNumberPart>
-          <FlagImage
-            source={config.assets.belarusFlag}
-          />
+          <FlagImage source={config.assets.belarusFlag} />
           <PhoneNumberText>+375</PhoneNumberText>
         </PhoneNumberPart>
       ) : null

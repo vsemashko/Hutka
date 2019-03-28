@@ -23,7 +23,7 @@ export const fetchConfirmCodeFailure = createAction('AUTHORIZATION/FETCH_CONFIRM
 
 export const fetchSendCodeAgainStart = createAction('AUTHORIZATION/FETCH_SEND_CODE_AGAIN_START');
 export const fetchSendCodeAgainSuccess = createAction('AUTHORIZATION/FETCH_SEND_CODE_AGAIN_SUCCESS');
-export const fetchSendCodeAgainFailure = createAction('AUTHORIZATION/FETCH_FETCH_SEND_CODE_AGAIN_FAILURE');
+export const fetchSendCodeAgainFailure = createAction('AUTHORIZATION/FETCH_SEND_CODE_AGAIN_FAILURE');
 
 export const confirmCode = ({ code }, { setErrors, setSubmitting }) => (dispatch) => {
   dispatch(fetchConfirmCodeStart());
