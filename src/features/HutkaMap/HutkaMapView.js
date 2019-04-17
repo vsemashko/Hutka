@@ -1,14 +1,19 @@
 import {
-  compose, lifecycle, withState, withHandlers,
+  compose, lifecycle, withHandlers, withState,
 } from 'recompose';
+import getRegionFromCurrentPosition from '../../utils/getRegionFromCurrentPosition';
+import { getToken } from '../../utils/tokenStorage';
 
 import HutkaMap from './HutkaMap';
 
 const withLifecycle = lifecycle({
-  componentDidMount() {
-    navigator.geolocation.getCurrentPosition(
-      position => console.log(position),
-    );
+  state: { token: null },
+  async componentDidMount() {
+    const [region, token] = await Promise.all([
+      getRegionFromCurrentPosition(),
+      getToken(),
+    ]);
+    this.setState({ region, token });
   },
 });
 
@@ -20,6 +25,7 @@ const readyMapLoadHandler = withHandlers({
 
 export default compose(
   withState('mapIsReady', 'readyMapHandler', false),
+  withState('token', 'setToken', null),
   readyMapLoadHandler,
   withLifecycle,
 )(HutkaMap);

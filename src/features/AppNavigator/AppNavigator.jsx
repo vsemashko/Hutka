@@ -9,6 +9,7 @@ import ServiceUseRules from 'src/features/Authorization/ServiceUseRules';
 import HutkaMap from 'src/features/HutkaMap';
 
 import { MapHeaderTitle } from 'src/components';
+import Rent from '../Rent';
 
 const AppNavigator = createStackNavigator({
   HutkaMap: {
@@ -33,6 +34,12 @@ const AppNavigator = createStackNavigator({
     screen: ServiceUseRules,
     navigationOptions: {
       title: 'Регистрация',
+    },
+  },
+  Rent: {
+    screen: Rent,
+    navigationOptions: {
+      title: 'Аренда велосипеда',
     },
   },
 }, {
