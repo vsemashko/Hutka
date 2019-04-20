@@ -1,12 +1,14 @@
 import { connect } from 'react-redux';
 
-import { navigateToRentScreen, navigateToSignInScreen } from './actions';
+import { getParkings, navigateToRentScreen, navigateToSignInScreen } from './actions';
 
 import HutkaMap from './HutkaMapView';
 
 export default connect(
-  null, {
+  ({ hutkaMap }) => ({ parkings: hutkaMap.parkings }),
+  {
     navigateToSignInScreen,
     navigateToRentScreen,
+    getParkings,
   },
 )(HutkaMap);

@@ -22,3 +22,9 @@ export const post = (url, headers, data) => request('post', url, headers, data);
 export const put = (url, headers, data) => request('PUT', url, headers, data);
 
 export const del = (url, headers) => request('DELETE', url, headers);
+
+export const getHeaders = token => ({
+  Accept: 'application/json',
+  'Content-Type': 'application/json',
+  Authorization: `Firebase ${token}`,
+});

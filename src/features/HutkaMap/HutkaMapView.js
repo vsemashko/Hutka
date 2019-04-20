@@ -13,6 +13,7 @@ const withLifecycle = lifecycle({
       getRegionFromCurrentPosition(),
       getToken(),
     ]);
+    this.props.getParkings(token);
     this.setState({ region, token });
   },
 });

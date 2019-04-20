@@ -19,7 +19,7 @@ const assets = {
 };
 
 export default {
-  apiUrl: 'http://localhost:8000',
+  apiUrl: 'https://hutkabike.appspot.com',
   contractLink: 'http://rp5.by/Weather_in_Minsk',
   assets,
   confirmResult,

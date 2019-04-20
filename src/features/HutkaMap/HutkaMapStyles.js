@@ -27,3 +27,7 @@ export const SignInButtonWrapper = styled.View`
 `;
 
 export const SpotImage = styled.Image``;
+
+export const MapCalloutView = styled.View`
+  width: 300;
+`;
